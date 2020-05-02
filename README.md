@@ -13,6 +13,8 @@ Usage of DroidFiles for attacking targets without prior mutual consent is illega
 ### Requirements:
 Android Studio (https://developer.android.com/studio)
 
+### Usage:
+```
 # git clone https://github.com/thelinuxchoice/droidfiles
 # cd droidfiles
 # bash droidfiles.sh
