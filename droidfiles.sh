@@ -3,20 +3,6 @@
 # Twitter: @linux_choice
 # Github: https://github.com/thelinuxchoice/droidfiles
 
-
-#trap 'printf "\n";stop' 2
-
-stop() {
-
-if [[ $checkphp == *'php'* ]]; then
-killall -2 php > /dev/null 2>&1
-fi
-
-exit 1
-
-
-}
-
 dependencies() {
 
 
@@ -309,13 +295,13 @@ if [[ $localhost == "" ]]; then
 localhost="localhost"
 fi
 printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;93m Example using localhost:\e[0m\n"
-printf "   \e[1;77m Start Server: \e[0m\e[1;92m php -c php.ini -S %s:4444 \e[0m\n" $localhost
-printf "   \e[1;77m Web Server: \e[0m\e[1;92m http://%s:4444 \e[0m\n" $localhost
+printf "   \e[1;77m Start Server: \e[0m\e[92m php -c php.ini -S %s:4444 \e[0m\n" $localhost
+printf "   \e[1;77m Web Server: \e[0m\e[92m http://%s:4444 \e[0m\n" $localhost
 
 printf "\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;93m Example using ngrok:\e[0m\n"
 
-printf "   \e[1;77m Start Server: \e[0m\e[1;92m ./ngrok http 4444; php -c php.ini -S %s:4444 \e[0m\n" $localhost
-printf "   \e[1;77m Web Server: \e[0m\e[1;92m https://*.ngrok.io \e[0m\n"
+printf "   \e[1;77m Start Server: \e[0m\e[92m ./ngrok http 4444; php -c php.ini -S %s:4444 \e[0m\n" $localhost
+printf "   \e[1;77m Web Server: \e[0m\e[92m https://*.ngrok.io \e[0m\n"
 
 
 read -p $'\n\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m]\e[0m\e[1;93m Choose a Web Server: \e[0m' host
