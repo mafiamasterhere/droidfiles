@@ -1,4 +1,4 @@
-# DroidFiles v1.0
+# DroidFiles v1.1
 ## Author: https://github.com/thelinuxchoice/droidfiles
 ## twitter: https://twitter.com/linux_choice
 
